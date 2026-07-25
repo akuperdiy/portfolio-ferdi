@@ -181,10 +181,12 @@
     color:var(--accent-4); font-family:'Space Mono',monospace; font-size:12.5px; text-decoration:none;
   }
   .card-links a:hover{ text-decoration:underline; }
-  .card.pinned{ border-color:var(--accent-3); box-shadow:0 10px 26px -16px rgba(245,163,0,0.45); }
+  .card.pinned{ border-color:var(--accent-3); box-shadow:0 10px 26px -16px rgba(245,163,0,0.45); position:relative; }
   .pin-badge{
+    position:absolute; top:14px; left:14px; z-index:2;
     display:inline-block; font-family:'Space Mono',monospace; font-size:10.5px; letter-spacing:.06em;
-    background:var(--accent-3); color:#241f33; padding:4px 10px; border-radius:100px; margin-bottom:10px;
+    background:var(--accent-3); color:#241f33; padding:4px 10px; border-radius:100px;
+    box-shadow:0 4px 10px -2px rgba(0,0,0,0.25);
   }
 
   /* ===== ARTICLE INDEX (daftar lengkap artikel) ===== */
@@ -258,7 +260,6 @@
     <ul>
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#karya-tulis">Karya</a></li>
-      <li><a href="#biodata">Biodata</a></li>
       <li><a href="#latar-belakang">Latar Belakang</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
@@ -460,19 +461,6 @@
         <p>Riset & pengembangan aplikasi pencatatan keuangan pribadi (Flutter + Firebase) untuk warga RT 04/RW 06 Kel. Grogol, Depok, terbit di jurnal nasional.</p>
         <p style="margin-top:10px;">Lihat publikasi →</p>
       </a>
-    </div>
-  </div>
-</section>
-
-<section id="biodata">
-  <div class="wrap">
-    <div class="eyebrow">Data Diri</div>
-    <div class="section-head"><h2>Biodata</h2></div>
-    <div class="biodata-grid">
-      <div class="biodata-item"><span>Nama Lengkap</span><b>Muhammad Ferdiansyah</b></div>
-      <div class="biodata-item"><span>Domisili</span><b>Kab. Bekasi, Jawa Barat</b></div>
-      <div class="biodata-item"><span>No. Telepon</span><b>+62 858 9434 9024</b></div>
-      <div class="biodata-item"><span>Email</span><b>muhammad.ferdiansyah2725@gmail.com</b></div>
     </div>
   </div>
 </section>
